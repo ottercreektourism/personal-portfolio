@@ -22,28 +22,37 @@
 /* Puts my name on the top left as an item NOT IN NAV BAR. */
 .name {
     color: var(--backgroundColor);
-    text-align: left;
     background-color: var(--navBarColor);
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 /* Puts nav bar list items on the right with good spacing */
 .name nav{
-    display: inline-block;
-    justify-content: space-between;
     font-size: 15px;
     color: var(--accentColor);
-    position: relative;
-    width: 100%;
+    margin-left: auto;
 }
 
 /* Spacing and font specs for nav bar links */
-.name nav ul li a {
+.name a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline-block;
     margin: 10px;
     text-decoration: none;
-    list-style: none;
-    vertical-align: middle;
+}
+.name li {
+    display: inline;
+}
+
+.backgroundimg {
+    background-image: url("../images/highway.jpg");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: var(--backgroundColor);
 }
 
 /* size/color of paragraph text.  */
@@ -57,7 +66,11 @@
     bottom: 800px;
     left: 300px;
     width: var(--widthOfTextBlocks);
-    border-left: 3px solid var(--navBarColor)
+}
+
+/* left borders only  */
+#sectionParents p, img:not(:nth-child(2n)), .contactMeBar li:first-child {
+border-left: 3px solid var(--navBarColor);
 }
 
 /* just the titles of each section */
@@ -75,7 +88,6 @@ flex-direction: row;
 .row img {
     box-sizing: border-box;
     display: flex;
-    /* width: 300px 100%; */
     width: 34%;
     height: 150px;
     padding: 10px;
@@ -105,6 +117,7 @@ below the nav bar. */
     font-size: 15px;
     color: var(--accentColor);
 	margin: 0 auto;
+    width: var(--widthOfTextBlocks);
 }
 
 #horizontal-list {

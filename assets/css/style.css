@@ -11,45 +11,107 @@
     --backgroundColor: rgb(182, 206, 212);
     --accentColor: rgb(76, 167, 162);
     --blockTextColor: rgb(0, 0, 0);
+    --widthOfTextBlocks: 60%;
 }
 
-body {
+/* Sets specs for whole body (whole page) like background color */
+.body {
     background-color: var(--backgroundColor);
 }
 
+/* Puts my name on the top left as an item NOT IN NAV BAR. */
 .name {
     color: var(--backgroundColor);
     text-align: left;
     background-color: var(--navBarColor);
 }
 
-.name nav {
-    display: inline;
+/* Puts nav bar list items on the right with good spacing */
+.name nav{
+    display: inline-block;
     justify-content: space-between;
     font-size: 15px;
     color: var(--accentColor);
-    float: right;
+    position: relative;
+    width: 100%;
 }
 
-.name nav ul {
-    list-style-type: none;
-}
-
-.name nav ul li {
+/* Spacing and font specs for nav bar links */
+.name nav ul li a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
     margin: 10px;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: middle;
 }
 
-.aboutMeBlurb h3 {
-    font-size: 25px;
+/* size/color of paragraph text.  */
+#sectionParents p, img, .contactMeBar ul li a{
+    font-size: 15px;
+    padding-left: 30px;
     color: var(--blockTextColor);
+    background-color: red;
+    position:relative;
+    top: 1px;
+    bottom: 800px;
+    left: 300px;
+    width: var(--widthOfTextBlocks);
+    border-left: 3px solid var(--navBarColor)
 }
 
+/* just the titles of each section */
 .sectionTitles {
     font-size: 40px;
 }
 
+.row {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+/* Formatting for image grid */
+.row img {
+    box-sizing: border-box;
+    display: flex;
+    /* width: 300px 100%; */
+    width: 34%;
+    height: 150px;
+    padding: 10px;
+}
+
+/* @media screen and (max-width: 800px) {
+    .column {
+        flex:50%;
+        max-width: 50%;
+    }
+} */
+
+/* cool subtitle, to be aligned with bottom right of parent.
+Parent should be either the whole header or just the block 
+below the nav bar. */
 #subtitle {
     text-align: right;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+/* Spacing and font specs for Contact Me list items */
+.contactMeBar {
+    display: table;
+    justify-content: space-between;
+    font-size: 15px;
+    color: var(--accentColor);
+	margin: 0 auto;
+}
+
+#horizontal-list {
+	list-style: none;
+	padding-top: 20px;
+}
+
+#horizontal-list li {
+	display: inline;
 }

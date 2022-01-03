@@ -1,118 +1,152 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <!-- Head section including name of the website and links to the stylesheet. -->
 
-<!-- Head section including name of the website and links to the stylesheet. -->
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Personal Portfolio</title>
-</head>
+  </head>
 
-<!-- Body section includes header and main, plus sections inside of main. -->
+  <!-- Body section includes header and main, plus sections inside of main. -->
 
-<body>
+  <body>
     <header class="name">
-        <h1>Marissa Flynn</h1>
-        <nav>
-            <ul>
-                <li class="underlineNav">
-                    <a href="#aboutMe">About Me</a>
-                </li>
-                <li class="underlineNav">
-                    <a href="#workLinks">Work</a>
-                </li>
-                <li class="underlineNav">
-                    <a href="#horizontal-list">Contact Me</a>
-                </li>
-                <li class="underlineNav">
-                    <a href="https://github.com/ottercreektourism">Resume</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>Marissa Flynn</h1>
+      <nav>
+        <ul>
+          <li class="underlineNav">
+            <a href="#aboutMe">About Me</a>
+          </li>
+          <li class="underlineNav">
+            <a href="#workLinks">Work</a>
+          </li>
+          <li class="underlineNav">
+            <a href="#horizontal-list">Contact Me</a>
+          </li>
+          <li class="underlineNav">
+            <a href="https://github.com/ottercreektourism">Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="backgroundimg">
-        <h2>Cool Subtitle here! </h2>
+      <h2>Cool Subtitle here!</h2>
     </div>
-
 
     <!-- Main section to include About me, Work and Contact Me sections. -->
 
     <main id="sectionParents">
-        <section id="aboutMe">
-            <h3 class="sectionTitles">About Me</h3>
-            <p>
-                Lorem ipsum dolor sit amet
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-        </section>
-        <section id="workLinks">
-            <h3 class="sectionTitles">Work</h3>
-            <div class="largestImage">
-                <img src="./assets/images/geography.jpg">
-                <div class="textBox">
-                    <h4 class="projectName">Geo Quiz</h4>
-                    <h5 class="language">Python</h5>
-                </div>
+      <section id="aboutMe">
+        <div class="leftContainer">
+          <h3 class="sectionTitles">About Me</h3>
+        </div>
+        <div class="rightContainer">
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </section>
+      <section id="workLinks">
+        <div class="leftContainer">
+          <h3>Work</h3>
+        </div>
+        <div class="rightContainer">
+          <div class="bigImage">
+            <img src="./assets/images/geography.jpg" />
+            <div class="textBox">
+              <h4 class="projectName">Geo Quiz</h4>
+              <h5 class="language">Python</h5>
             </div>
-
-            <div class="row">
-                <!-- <a href="https://github.com/ottercreektourism">
-                    <img src="./assets/images/geography.jpg" alt="Aerial view of New York City at night." width="34%">
-                </a>
-                <a href="https://github.com/ottercreektourism">
-                    <img src="./assets/images/yosemite.jpg" alt="Aerial view of New York City at night.">
-                </a>
-                <a href="https://github.com/ottercreektourism">
-                    <img src="./assets/images/mountains.jpg" alt="Aerial view of New York City at night.">
-                </a>
-                <a href="https://github.com/ottercreektourism">
-                    <img src="./assets/images/forest.jpg" alt="Aerial view of New York City at night.">
-                </a> -->
-                <img src="./assets/images/birds.jpg">
-                <div class="textBox">
-                    <h4 class="projectName">Geo Quiz</h4>
-                    <h5 class="language">Python</h5>
-                </div>
-                <img src="./assets/images/yosemite.jpg" alt="View of Yosemite National Park looking towards Half Dome.">
-                <img src="./assets/images/mountains.jpg" alt="Scenic view of hiking trail and mountains.">
-                <img src="./assets/images/forest.jpg" alt="Forest with sunlight.">
+          </div>
+          <div class="rowContainer">
+            <div class="imgcontainer">
+              <a href="https://ottercreektourism.github.io/map/">
+                <img
+                  src="./assets/images/forest.jpg"
+                  alt="Aerial view of New York City at night."
+                  width="34%"
+                />
+              </a>
+              <div class="textBox">
+                <h4 class="projectName">Otter Creek Map</h4>
+                <h5 class="language">HTML/CSS and GIS</h5>
+              </div>
             </div>
-
-            <p>
-                Lorem ipsum dolor sit amet
-            </p>
-        </section>
-        <section id="horizontal-list">
-            <h3 class="sectionTitles">Contact Me</h3>
-            <nav class="contactMeBar">
-                <ul>
-                    <li class="underlineCM">
-                        <a href="603-380-3435">Phone</a>
-                    </li>
-                    <li class="underlineCM">
-                        <a href="#online-reputation-management">Website</a>
-                    </li>
-                    <li class="underlineCM">
-                        <a href="https://github.com/ottercreektourism">GitHub</a>
-                    </li>
-                    <li class="underlineCM">
-                        <a href="https://www.linkedin.com/in/marissa-flynn-6b1278180/">LinkedIn</a>
-                    </li>
-                    <li class="underlineCM">
-                        <a href="https://open.spotify.com/user/mkflynn13?si=3fb413657cc140be">Spotify</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
+            <div class="imgcontainer">
+                <a href="https://github.com/ottercreektourism">
+                  <img
+                    src="./assets/images/geography.jpg"
+                    alt="Aerial view of New York City at night."
+                    width="34%"
+                  />
+                </a>
+                <div class="textBox">
+                  <h4 class="projectName">Geo Quiz</h4>
+                  <h5 class="language">Python</h5>
+                </div>
+              </div><div class="imgcontainer">
+                <a href="https://github.com/ottercreektourism">
+                  <img
+                    src="./assets/images/geography.jpg"
+                    alt="Aerial view of New York City at night."
+                    width="34%"
+                  />
+                </a>
+                <div class="textBox">
+                  <h4 class="projectName">Geo Quiz</h4>
+                  <h5 class="language">Python</h5>
+                </div>
+              </div><div class="imgcontainer">
+                <a href="https://github.com/ottercreektourism">
+                  <img
+                    src="./assets/images/geography.jpg"
+                    alt="Aerial view of New York City at night."
+                    width="34%"
+                  />
+                </a>
+                <div class="textBox">
+                  <h4 class="projectName">Geo Quiz</h4>
+                  <h5 class="language">Python</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="horizontal-list">
+        <h3 class="sectionTitles">Contact Me</h3>
+        <nav class="contactMeBar">
+          <ul>
+            <li class="underlineCM">
+              <a href="603-380-3435">Phone</a>
+            </li>
+            <li class="underlineCM">
+              <a href="#online-reputation-management">Website</a>
+            </li>
+            <li class="underlineCM">
+              <a href="https://github.com/ottercreektourism">GitHub</a>
+            </li>
+            <li class="underlineCM">
+              <a href="https://www.linkedin.com/in/marissa-flynn-6b1278180/"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="underlineCM">
+              <a
+                href="https://open.spotify.com/user/mkflynn13?si=3fb413657cc140be"
+                >Spotify</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

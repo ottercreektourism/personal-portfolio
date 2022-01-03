@@ -49,8 +49,12 @@
     position: relative;
 }
 
+.underlineNav a{
+    border-bottom: 1px solid black;
+}
+
 /* Creates the underline for the nav bar items */
-.underlineNav::after {
+/* .underlineNav::after {
     content: '';
     height: 2px;
     width: 60%;
@@ -58,7 +62,7 @@
     position: absolute;
     left: 50%;
     bottom: 0;
-}
+} */
 
 /* Creates the image that sits under the nav bar and formats it properly */
 .backgroundimg {
@@ -72,12 +76,12 @@
 }
 
 /* Puts a text box on top of the images */
-.textBox {
+/* .textBox {
     bottom: 80%;
     left: 20%;
     text-align: center;
     color: var(--accentColor);
-}
+} */
 
 /* Targets the projectName class to specify font for the name of attached deployed project */
 .projectName {
@@ -100,24 +104,26 @@
     height: 150px;
     content: 10px solid var(--accentColor);
 }
-
+#aboutMe {
+    display: flex;
+}
 /* Formats the paragraphs and images so they are all lined up nicely */
-#sectionParents p, img {
+/* #sectionParents p, img {
     font-size: 15px;
     padding-left: 30px;
     color: var(--blockTextColor);
     /* background-color: red; */
-    position:relative;
+    /* position:relative;
     top: 1px;
     bottom: 800px;
     left: 300px;
     width: var(--widthOfTextBlocks);
-}
+} */ 
 
 /* Inserts left borders only  */
-#sectionParents p, img:not(:nth-child(2n)), .contactMeBar li:first-child {
+/* #sectionParents p, img:not(:nth-child(2n)), .contactMeBar li:first-child {
 border-left: 3px solid var(--navBarColor);
-}
+} */
 
 /* Targets the titles of each section */
 .sectionTitles {
@@ -134,14 +140,22 @@ border-left: 3px solid var(--navBarColor);
 }
 
 /* Formatting for image grid */
-.row img {
-    /* box-sizing: border-box; */
+/* .row img {
+    box-sizing: border-box;
     display: flex;
-    width: 34%;
+    width: 100%;
     height: 150px;
     padding: 10px;
     border: 10px solid var(--accentColor);
 }
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    width: 34%;
+} */
+
 
 /* @media screen and (max-width: 800px) {
     .column {
@@ -163,21 +177,28 @@ border-left: 3px solid var(--navBarColor);
     /* justify-content: space-between; */
     font-size: 18px;
     color: var(--accentColor);
-	margin: 12px auto;
-    width: var(--widthOfTextBlocks);
-    position: relative;
-    left: 60px;
+	/* margin: 12px auto; */
+    /* width: var(--widthOfTextBlocks); */
+    /* position: relative; */
+    /* left: 60px; */
 }
 
 /* Formatting for the Contact Me links */
 #horizontal-list a {
-    padding-left: 80px;
+    /* padding-left: 80px; */
     text-decoration: none;
+    display: flex;
     /* border-bottom: 3px solid var(--navBarColor); */
 }
 
 /* Formatting for the Contact Me section */
 #horizontal-list {
+    width: 100%;
+	list-style: none;
+	padding-top: 20px;
+}
+#horizontal-list ul{
+    width: 100%;
 	list-style: none;
 	padding-top: 20px;
 }
@@ -187,14 +208,14 @@ border-left: 3px solid var(--navBarColor);
 	display: inline;
 }
 
-/* Puts underline under the Contact Me items */
+/* Puts underline under the Contact Me items
 .underlineCM {
     display: inline-block;
     position: relative;
-}
+} */
 
 /* Formats the underlines to make them under each word */
-.underlineCM::after {
+/* .underlineCM::after {
     content: '';
     height: 2px;
     width: 50%;
@@ -202,4 +223,52 @@ border-left: 3px solid var(--navBarColor);
     position: absolute;
     left: 50%;
     bottom: 0;
+} */
+
+#workLinks {
+    display: flex;
+    flex-direction: row;
+}
+.leftContainer {
+    display: flex;
+    flex: 20%;
+    border: 1px solid black;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 80%;
+}
+
+.rowContainer {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    width: 40%;
+    position: relative;
+}
+.imgcontainer img {
+    width: 100%;
+}
+
+.textBox {
+    background-color: aqua;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+.bigImage {
+    width: 100%;
+    position: relative;
+}
+.bigImage img {
+    width: 100%;
 }

@@ -36,6 +36,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px;
     text-decoration: none;
+    color: var(--backgroundColor);
 }
 
 /* Puts list items inline */
@@ -50,7 +51,7 @@
 }
 
 .underlineNav a{
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--backgroundColor);
 }
 
 /* Creates the underline for the nav bar items */
@@ -91,12 +92,13 @@
 /* Targets the language subtitle for the deployed project */
 .language {
     font-size: 12;
+    text-align: center;
 }
 
 /* Specifies color and padding for the project title box */
 .projectName, .language {
     color: var(--blockTextColor);
-    padding: 10px 32px;
+    padding: 5px 5px;
 }
 
 /* Formats the largest image for the featured deployed project */
@@ -107,6 +109,10 @@
 #aboutMe {
     display: flex;
 }
+
+/* .leftContainer .h3 {
+    text-align: right;
+} */
 /* Formats the paragraphs and images so they are all lined up nicely */
 /* #sectionParents p, img {
     font-size: 15px;
@@ -127,7 +133,7 @@ border-left: 3px solid var(--navBarColor);
 
 /* Targets the titles of each section */
 .sectionTitles {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* Crerates a row for the images so they can be wrapped */
@@ -233,12 +239,16 @@ border-left: 3px solid var(--navBarColor);
     display: flex;
     flex: 20%;
     border: 1px solid black;
+    font-size: 25px;
 }
 
 .rightContainer {
     display: flex;
     flex-direction: column;
+    width: var(--widthOfTextBlocks);
     flex: 80%;
+    border-left: 3px solid var(--navBarColor);
+    padding-left: 30px;
 }
 
 .rowContainer {
@@ -250,24 +260,30 @@ border-left: 3px solid var(--navBarColor);
 .imgcontainer {
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
+    box-sizing: border-box;
+    /* padding: 5px solid var(--accentColor); */
     width: 40%;
     position: relative;
+    height: 142px;
+    padding-right: 10px;
 }
 .imgcontainer img {
     width: 100%;
+    height: 132px;
+    border: 5px var(--accentColor) solid;
 }
 
 .textBox {
-    background-color: aqua;
+    background-color: var(--accentColor);
     position: absolute;
     bottom: 30px;
 }
 
 
 .bigImage {
-    width: 100%;
+    width: var(--widthOfTextBlocks);
     position: relative;
+    height: 300px;
 }
 .bigImage img {
     width: 100%;

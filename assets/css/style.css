@@ -1,3 +1,4 @@
+/* Targets the entire document to specify font family */
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
@@ -5,7 +6,7 @@
     margin: 0;
 }
 
-/* declaring variables to use throughout web page */
+/* Declaring variables to use throughout web page */
 :root {
     --navBarColor: rgb(25, 27, 121);
     --backgroundColor: rgb(182, 206, 212);
@@ -36,10 +37,30 @@
     margin: 10px;
     text-decoration: none;
 }
+
+/* Puts list items inline */
 .name li {
     display: inline;
 }
 
+/* Underlines the items in the nav bar */
+.underlineNav {
+    display: inline-block;
+    position: relative;
+}
+
+/* Creates the underline for the nav bar items */
+.underlineNav::after {
+    content: '';
+    height: 2px;
+    width: 60%;
+    background: var(--backgroundColor);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+/* Creates the image that sits under the nav bar and formats it properly */
 .backgroundimg {
     background-image: url("../images/highway.jpg");
     width: 100%;
@@ -50,12 +71,42 @@
     color: var(--backgroundColor);
 }
 
-/* size/color of paragraph text.  */
+/* Puts a text box on top of the images */
+.textBox {
+    bottom: 80%;
+    left: 20%;
+    text-align: center;
+    color: var(--accentColor);
+}
+
+/* Targets the projectName class to specify font for the name of attached deployed project */
+.projectName {
+    font-size: 15px;
+}
+
+/* Targets the language subtitle for the deployed project */
+.language {
+    font-size: 12;
+}
+
+/* Specifies color and padding for the project title box */
+.projectName, .language {
+    color: var(--blockTextColor);
+    padding: 10px 32px;
+}
+
+/* Formats the largest image for the featured deployed project */
+.largestImage img{
+    height: 150px;
+    content: 10px solid var(--accentColor);
+}
+
+/* Formats the paragraphs and images so they are all lined up nicely */
 #sectionParents p, img {
     font-size: 15px;
     padding-left: 30px;
     color: var(--blockTextColor);
-    /* background-color: var(--backgroundColor); */
+    /* background-color: red; */
     position:relative;
     top: 1px;
     bottom: 800px;
@@ -63,16 +114,17 @@
     width: var(--widthOfTextBlocks);
 }
 
-/* left borders only  */
+/* Inserts left borders only  */
 #sectionParents p, img:not(:nth-child(2n)), .contactMeBar li:first-child {
 border-left: 3px solid var(--navBarColor);
 }
 
-/* just the titles of each section */
+/* Targets the titles of each section */
 .sectionTitles {
     font-size: 40px;
 }
 
+/* Crerates a row for the images so they can be wrapped */
 .row {
     box-sizing: border-box;
     display: flex;
@@ -98,9 +150,7 @@ border-left: 3px solid var(--navBarColor);
     }
 } */
 
-/* cool subtitle, to be aligned with bottom right of parent.
-Parent should be either the whole header or just the block 
-below the nav bar. */
+/* Targets and formats the subtitle */
 #subtitle {
     text-align: right;
     position: absolute;
@@ -118,16 +168,38 @@ below the nav bar. */
     position: relative;
     left: 60px;
 }
+
+/* Formatting for the Contact Me links */
 #horizontal-list a {
     padding-left: 80px;
     text-decoration: none;
+    /* border-bottom: 3px solid var(--navBarColor); */
 }
 
+/* Formatting for the Contact Me section */
 #horizontal-list {
 	list-style: none;
 	padding-top: 20px;
 }
 
+/* Formatting for the Contact Me list items */
 #horizontal-list li {
 	display: inline;
+}
+
+/* Puts underline under the Contact Me items */
+.underlineCM {
+    display: inline-block;
+    position: relative;
+}
+
+/* Formats the underlines to make them under each word */
+.underlineCM::after {
+    content: '';
+    height: 2px;
+    width: 50%;
+    background: var(--navBarColor);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
 }

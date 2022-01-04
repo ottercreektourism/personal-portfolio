@@ -245,12 +245,3 @@
 .underlineCM a{
     border-bottom: 2px solid var(--navBarColor);
 }
-
-
-/* @media screen and (max-width: 800px) {
-    .column {
-        flex:50%;
-        max-width: 50%;
-    }
-} */
-

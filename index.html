@@ -15,32 +15,38 @@
         <h1>Marissa Flynn</h1>
         <nav>
             <ul>
+                <!-- Defines a class for each of the nav bar links -->
                 <li class="underlineNav">
                     <a href="#aboutMe">About Me</a>
                 </li>
                 <li class="underlineNav">
                     <a href="#workLinks">Work</a>
                 </li>
-                <!-- <li class="underlineNav"> -->
+                <li class="underlineNav">
                     <a href="#horizontal-list">Contact Me</a>
                 </li>
                 <li class="underlineNav">
-                    <a href="https://github.com/ottercreektourism">Resume</a>
+                    <a href="./assets/images/resume.pdf">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="backgroundimg">
-        <h2>Cool Subtitle here!</h2>
+    <!-- Creates a class for the image below the nav bar and the text contained within it. -->
+    <div class="backgroundimg" alt="Aerial view of evergreen trees.">
+        <h2>Welcome!</h2>
     </div>
 
     <!-- Main section to include About me, Work and Contact Me sections. -->
 
+    <!-- Defines an id to be used as a container for all sections -->
     <main id="sectionParents">
+        <!-- Targets About Me section -->
         <section id="aboutMe">
+            <!-- Puts the section title in the left container for the left side of the screen. -->
             <div class="leftContainer">
                 <h3 class="sectionTitles">About<br>Me</h3>
             </div>
+            <!-- Puts the text into the right container for the right side of the screen. -->
             <div class="rightContainer">
                 <p>Lorem ipsum dolor sit amet
                 </p>
@@ -55,23 +61,32 @@
                 </p>
             </div>
         </section>
+        <!-- Creates an id for the pictures that contain links to deployed projects. -->
         <section id="workLinks">
+            <!-- Puts the Work title in the left container. -->
             <div class="leftContainer">
                 <h3>Work</h3>
             </div>
+            <!-- Puts all of the images into the right container. -->
             <div class="rightContainer">
+                <!-- Crreate a class for the largest image, with a link to the project (not created yet) and inserts the file -->
                 <div class="bigImage">
-                    <img src="./assets/images/geography.jpg" />
+                    <a href="https://ottercreektourism.github.io/map/">
+                        <img src="./assets/images/geography.jpg" alt="Aerial view of New York City at night." class="imageFade" />
+                    </a>
+                    <!-- Creates a class for the text box that explains what the project is called and in what language. -->
                     <div class="textBox">
                         <h4 class="projectName">Geo Quiz</h4>
                         <h5 class="language">Python</h5>
                     </div>
                 </div>
+                <!-- Created a class for the container in which the container for all 4 smaller grid images are. -->
                 <div class="rowContainer">
+                    <!-- This is the container that the images are inside of. Four images have a link to the deployed site (some linked, others not yet created), and inserts the files.-->
                     <div class="imgcontainer">
                         <a href="https://ottercreektourism.github.io/map/">
-                            <img src="./assets/images/forest.jpg" alt="Aerial view of New York City at night."
-                                width="34%" />
+                            <img src="./assets/images/forest.jpg" alt="Forest with rays of sun."
+                                class="imageFade" width="34%" />
                         </a>
                         <div class="textBox">
                             <h4 class="projectName">Otter Creek Map</h4>
@@ -80,8 +95,8 @@
                     </div>
                     <div class="imgcontainer">
                         <a href="https://ottercreektourism.github.io/code_refactor/">
-                            <img src="./assets/images/birds.jpg" alt="Aerial view of New York City at night."
-                                width="34%" />
+                            <img src="./assets/images/birds.jpg" alt="Pink sky with birds flying."
+                                class="imageFade" width="34%" />
                         </a>
                         <div class="textBox">
                             <h4 class="projectName">Code Refactoring</h4>
@@ -90,8 +105,8 @@
                     </div>
                     <div class="imgcontainer">
                         <a href="https://github.com/ottercreektourism">
-                            <img src="./assets/images/mountains.jpg" alt="Aerial view of New York City at night."
-                                width="34%" />
+                            <img src="./assets/images/mountains.jpg" alt="Hiking Trail wih mountains."
+                                class="imageFade" width="34%" />
                         </a>
                         <div class="textBox">
                             <h4 class="projectName">Other Project</h4>
@@ -100,8 +115,8 @@
                     </div>
                     <div class="imgcontainer">
                         <a href="https://github.com/ottercreektourism">
-                            <img src="./assets/images/yosemite.jpg" alt="Aerial view of New York City at night."
-                                width="34%" />
+                            <img src="./assets/images/yosemite.jpg" alt="Sunset view of Yosemite National Park at Half Dome."
+                                class="imageFade" width="34%" />
                         </a>
                         <div class="textBox">
                             <h4 class="projectName">Other Project</h4>
@@ -111,18 +126,22 @@
                 </div>
             </div>
         </section>
+        <!-- Creates an id for the Contact Me bar list -->
         <section id="horizontal-list">
+            <!-- Puts the Contact Me title in the left container. -->
             <div class="leftContainer">
                 <h3 class="sectionTitles">Contact Me</h3>
             </div>
+            <!-- Puts all of the links in the right-hand container -->
             <div class="rightContainer">
                 <nav class="contactMeBar">
                     <ul>
+                        <!-- Each link or number is put into the same class. The class determines how the items will be styled. i.e. underlines. -->
                         <li class="underlineCM">
-                            <a href="603-380-3435">Phone</a>
+                            <a>(603)380-3435)</a>
                         </li>
                         <li class="underlineCM">
-                            <a href="#online-reputation-management">Website</a>
+                            <a>Website- Coming Soon</a>
                         </li>
                         <li class="underlineCM">
                             <a href="https://github.com/ottercreektourism">GitHub</a>

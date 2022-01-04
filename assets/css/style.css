@@ -50,24 +50,14 @@
     position: relative;
 }
 
+/* Creates an underline for each item in the nav bar */
 .underlineNav a{
     border-bottom: 2px solid var(--backgroundColor);
 }
 
-/* Creates the underline for the nav bar items */
-/* .underlineNav::after {
-    content: '';
-    height: 2px;
-    width: 60%;
-    background: var(--backgroundColor);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-} */
-
 /* Creates the image that sits under the nav bar and formats it properly */
 .backgroundimg {
-    background-image: url("../images/highway.jpg");
+    background-image: url("../images/trees.jpg");
     width: 100%;
     height: 150px;
     display: flex;
@@ -75,14 +65,6 @@
     justify-content: flex-end;
     color: var(--backgroundColor);
 }
-
-/* Puts a text box on top of the images */
-/* .textBox {
-    bottom: 80%;
-    left: 20%;
-    text-align: center;
-    color: var(--accentColor);
-} */
 
 /* Targets the projectName class to specify font for the name of attached deployed project */
 .projectName {
@@ -106,30 +88,11 @@
     height: 150px;
     content: 10px solid var(--accentColor);
 }
+
+/* The About Me section gets flexed */
 #aboutMe {
     display: flex;
 }
-
-/* .leftContainer .h3 {
-    text-align: right;
-} */
-/* Formats the paragraphs and images so they are all lined up nicely */
-/* #sectionParents p, img {
-    font-size: 15px;
-    padding-left: 30px;
-    color: var(--blockTextColor);
-    /* background-color: red; */
-    /* position:relative;
-    top: 1px;
-    bottom: 800px;
-    left: 300px;
-    width: var(--widthOfTextBlocks);
-} */ 
-
-/* Inserts left borders only  */
-/* #sectionParents p, img:not(:nth-child(2n)), .contactMeBar li:first-child {
-border-left: 3px solid var(--navBarColor);
-} */
 
 /* Targets the titles of each section */
 .sectionTitles {
@@ -144,23 +107,6 @@ border-left: 3px solid var(--navBarColor);
     flex-direction: row;
     width: 100%;
 }
-
-/* Formatting for image grid */
-/* .row img {
-    box-sizing: border-box;
-    display: flex;
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border: 10px solid var(--accentColor);
-}
-.imgcontainer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 1px solid black;
-    width: 34%;
-} */
 
 
 /* @media screen and (max-width: 800px) {
@@ -180,21 +126,14 @@ border-left: 3px solid var(--navBarColor);
 
 /* Spacing and font specs for Contact Me list items */
 .contactMeBar {
-    /* justify-content: space-between; */
     font-size: 18px;
     color: var(--accentColor);
-	/* margin: 12px auto; */
-    /* width: var(--widthOfTextBlocks); */
-    /* position: relative; */
-    /* left: 60px; */
 }
 
 /* Formatting for the Contact Me links */
 #horizontal-list a {
-    /* padding-left: 80px; */
     text-decoration: none;
     display: flex;
-    /* border-bottom: 3px solid var(--navBarColor); */
 }
 
 /* Formatting for the Contact Me section */
@@ -202,7 +141,10 @@ border-left: 3px solid var(--navBarColor);
     width: 100%;
 	list-style: none;
 	padding-top: 20px;
+    display: flex;
 }
+
+/* Targets the unordered list as a whole tp specify width, padding and style */
 #horizontal-list ul{
     width: 100%;
 	list-style: none;
@@ -214,34 +156,20 @@ border-left: 3px solid var(--navBarColor);
 	display: inline;
 }
 
-/* Puts underline under the Contact Me items
-.underlineCM {
-    display: inline-block;
-    position: relative;
-} */
-
-/* Formats the underlines to make them under each word */
-/* .underlineCM::after {
-    content: '';
-    height: 2px;
-    width: 50%;
-    background: var(--navBarColor);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-} */
-
+/* Sits the pictures side-by-side with the Work title */
 #workLinks {
     display: flex;
     flex-direction: row;
 }
+
+/* Targets just the left side of the screen */
 .leftContainer {
     display: flex;
     flex: 20%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 25px;
 }
-
+ /* Targets just the right side of the screen with specs for flex */
 .rightContainer {
     display: flex;
     flex-direction: column;
@@ -251,12 +179,20 @@ border-left: 3px solid var(--navBarColor);
     padding-left: 30px;
 }
 
+/* Targets the paragraph texts in the right container in About Me section */
+.rightContainer p {
+    width: 780px;
+    padding-bottom: 20px;
+}
+
+/* Creates a flex box for the row container which houses the image container */
 .rowContainer {
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
+/* Specifies sizing for the image container */
 .imgcontainer {
     display: flex;
     flex-direction: column;
@@ -267,24 +203,77 @@ border-left: 3px solid var(--navBarColor);
     height: 142px;
     padding-right: 10px;
 }
+
+/* Targets the imaages within their container */
 .imgcontainer img {
     width: 100%;
     height: 132px;
     border: 5px var(--accentColor) solid;
 }
 
+/* Hover function for each small image */
+.imgcontainer a:hover .imageFade {
+    opacity: 0.5;
+}
+
+/* Hover function for the large image */
+.bigImage a:hover .imageFade {
+    opacity: 0.5;
+}
+
+/* Specifies rules for fading */
+.imageFade {
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/* Contains spacs for the text boxes that hold image titles */
 .textBox {
     background-color: var(--accentColor);
     position: absolute;
     bottom: 30px;
 }
 
-
+/* Specifies rules for the featured project image */
 .bigImage {
     width: var(--widthOfTextBlocks);
     position: relative;
-    height: 300px;
+    height: 320px;
 }
+
+/* Targets the largest image within its container */
 .bigImage img {
-    width: 100%;
+    width: 780px;
+    border: 5px var(--accentColor) solid;
+}
+
+/* Gives sizing and spacing for the nav within the Contact Me bar list */
+#horizontal-list nav{
+    font-size: 15px;
+    color: var(--accentColor);
+    /* margin-left: auto; */
+}
+
+/* Spacing and font specs for Contact Me bar links */
+#horizontal-list a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--navBarColor);
+}
+
+/* Puts list items inline */
+#horizontal-list li {
+    display: inline;
+}
+
+/* Underlines the items in the Contact Me bar */
+.underlineCM {
+    display: inline-block;
+    position: relative;
+}
+
+/* Underlines each anchor within the underline class for the Contact Me bar */
+.underlineCM a{
+    border-bottom: 2px solid var(--navBarColor);
 }

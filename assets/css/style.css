@@ -31,18 +31,18 @@
     margin-left: auto;
 }
 
+/* Puts list items inline */
+.name li {
+    display: inline;
+    line-height: 60px;
+}
+
 /* Spacing and font specs for nav bar links */
 .name a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px;
     text-decoration: none;
     color: var(--backgroundColor);
-}
-
-/* Puts list items inline */
-.name li {
-    display: inline;
-    line-height: 60px;
 }
 
 /* Underlines the items in the nav bar */
@@ -73,68 +73,9 @@
     position: absolute;
 }
 
-/* Targets the projectName class to specify font for the name of attached deployed project */
-.projectName {
-    font-size: 15px;
-}
-
-/* Targets the language subtitle for the deployed project */
-.language {
-    font-size: 12;
-    text-align: center;
-}
-
-/* Specifies color and padding for the project title box */
-.projectName, .language {
-    color: var(--blockTextColor);
-    padding: 5px 5px;
-}
-
-/* Formats the largest image for the featured deployed project */
-.largestImage img{
-    height: 150px;
-    content: 10px solid var(--accentColor);
-}
-
 /* The About Me section gets flexed */
 #aboutMe {
     display: flex;
-}
-
-/* Targets the titles of each section */
-.sectionTitles {
-    font-size: 30px;
-}
-
-/* Crerates a row for the images so they can be wrapped */
-.row {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-}
-
-
-/* @media screen and (max-width: 800px) {
-    .column {
-        flex:50%;
-        max-width: 50%;
-    }
-} */
-
-/* Formatting for the Contact Me section */
-#horizontal-list {
-    width: 100%;
-	list-style: none;
-	padding-top: 20px;
-    display: flex;
-}
-
-/* Sits the pictures side-by-side with the Work title */
-#workLinks {
-    display: flex;
-    flex-direction: row;
 }
 
 /* Targets just the left side of the screen */
@@ -144,8 +85,14 @@
     /* border: 1px solid black; */
     font-size: 25px;
 }
+
+/* Targets the titles of each section */
+.sectionTitles {
+    font-size: 30px;
+}
+
  /* Targets just the right side of the screen with specs for flex */
-.rightContainer {
+ .rightContainer {
     display: flex;
     flex-direction: column;
     width: var(--widthOfTextBlocks);
@@ -160,10 +107,55 @@
     padding-bottom: 20px;
 }
 
+/* Sits the pictures side-by-side with the Work title */
+#workLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Specifies rules for the featured project image */
+.bigImage {
+    width: var(--widthOfTextBlocks);
+    position: relative;
+    height: 320px;
+}
+
+/* Targets the largest image within its container */
+.bigImage img {
+    width: 780px;
+    border: 5px var(--accentColor) solid;
+}
+
+/* Hover function for the large image */
+.bigImage a:hover .imageFade {
+    opacity: 0.5;
+}
+
+/* Contains spacs for the text boxes that hold image titles */
+.textBox {
+    background-color: var(--accentColor);
+    position: absolute;
+    bottom: 30px;
+}
+
+/* Targets the projectName class to specify font for the name of attached deployed project */
+.projectName {
+    font-size: 15px;
+    color: var(--blockTextColor);
+    padding: 5px 5px;
+}
+
+/* Targets the language subtitle for the deployed project */
+.language {
+    font-size: 12;
+    text-align: center;
+    color: var(--blockTextColor);
+    padding: 5px 5px;
+}
+
 /* Creates a flex box for the row container which houses the image container */
 .rowContainer {
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
@@ -172,7 +164,6 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    /* padding: 5px solid var(--accentColor); */
     width: 40%;
     position: relative;
     height: 142px;
@@ -191,41 +182,18 @@
     opacity: 0.5;
 }
 
-/* Hover function for the large image */
-.bigImage a:hover .imageFade {
-    opacity: 0.5;
-}
-
 /* Specifies rules for fading */
 .imageFade {
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
-/* Contains spacs for the text boxes that hold image titles */
-.textBox {
-    background-color: var(--accentColor);
-    position: absolute;
-    bottom: 30px;
-}
-
-/* Specifies rules for the featured project image */
-.bigImage {
-    width: var(--widthOfTextBlocks);
-    position: relative;
-    height: 320px;
-}
-
-/* Targets the largest image within its container */
-.bigImage img {
-    width: 780px;
-    border: 5px var(--accentColor) solid;
-}
-
-/* Spacing and font specs for Contact Me list items */
-.contactMeBar {
-    font-size: 18px;
-    color: var(--accentColor);
+/* Formatting for the Contact Me section */
+#horizontal-list {
+    width: 100%;
+	list-style: none;
+	padding-top: 20px;
+    display: flex;
 }
 
 /* Gives sizing and spacing for the nav within the Contact Me bar list */
@@ -260,6 +228,12 @@
     text-align: center;
 }
 
+/* Spacing and font specs for Contact Me list items */
+.contactMeBar {
+    font-size: 18px;
+    color: var(--accentColor);
+}
+
 /* Underlines the items in the Contact Me bar */
 .underlineCM {
     display: inline-block;
@@ -271,3 +245,12 @@
 .underlineCM a{
     border-bottom: 2px solid var(--navBarColor);
 }
+
+
+/* @media screen and (max-width: 800px) {
+    .column {
+        flex:50%;
+        max-width: 50%;
+    }
+} */
+

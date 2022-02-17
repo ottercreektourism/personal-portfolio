@@ -21,7 +21,8 @@
     background-color: var(--navBarColor);
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    min-width: 100%;
 }
 
 /* Puts nav bar list items on the right with good spacing */
@@ -242,6 +243,34 @@
 }
 
 /* Underlines each anchor within the underline class for the Contact Me bar */
-.underlineCM a{
+.underlineCM a {
     border-bottom: 2px solid var(--navBarColor);
 }
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.leftSide {
+    margin-left: 1%;
+}
+
+
+/* @media (max-width: 640px){
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    } */
+    /* Puts list items inline */
+    /* .name li {
+        display: block;
+        line-height: 60px;
+    }
+} */

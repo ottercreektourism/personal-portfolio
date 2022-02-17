@@ -6,15 +6,16 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <!-- Body section includes header and main, plus sections inside of main. -->
 
 <body>
-    <header class="name">
+    <header class="name" class="header-nav">
         <h1>Marissa Flynn</h1>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <!-- Defines a class for each of the nav bar links -->
                 <li class="underlineNav">
                     <a href="#aboutMe">About Me</a>
@@ -44,40 +45,38 @@
         <section id="aboutMe">
             <!-- Puts the section title in the left container for the left side of the screen. -->
             <div class="leftContainer">
-                <h3 class="sectionTitles">About<br>Me</h3>
+                <h3 class="sectionTitles leftSide">About<br>Me</h3>
             </div>
             <!-- Puts the text into the right container for the right side of the screen. -->
             <div class="rightContainer">
-                <p>Lorem ipsum dolor sit amet
+                <p>Hi there! My name is Marissa Flynn.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    I’m a full stack web developer from New Hampshire with experience in several non-tech fields
+                    including anthropology, medical research design and Geographic Information Systems. Here you’ll find
+                    projects that I’ve created in HTML, CSS, JavaScript and Python. Please refer to the contact
+                    information at the bottom of the page if you have any questions about my work.
                 </p>
             </div>
         </section>
         <!-- Creates an id for the pictures that contain links to deployed projects. -->
-        <section id="workLinks">
+        <section id="workLinks" class="leftSide">
             <!-- Puts the Work title in the left container. -->
             <div class="leftContainer">
-                <h3>Work</h3>
+                <h3 class="leftSide">Work</h3>
             </div>
             <!-- Puts all of the images into the right container. -->
             <div class="rightContainer">
-                <!-- Crreate a class for the largest image, with a link to the project (not created yet) and inserts the file -->
+                <!-- Create a class for the largest image, with a link to the project (not created yet) and inserts the file -->
                 <div class="bigImage">
-                    <a href="https://github.com/ottercreektourism">
-                        <img src="./assets/images/geography.jpg" alt="Aerial view of New York City at night." class="imageFade" />
+                    <a href="https://github.com/ottercreektourism/Geography-Game/blob/main/geography-game.py">
+                        <img src="./assets/images/geography.jpg" alt="Aerial view of New York City at night."
+                            class="imageFade" />
                     </a>
                     <!-- Creates a class for the text box that explains what the project is called and in what language. -->
                     <div class="textBox">
-                        <h4 class="projectName">Geo Quiz</h4>
-                        <h5 class="language">Coming Soon</h5>
+                        <h4 class="projectName">Geography Quiz</h4>
+                        <h5 class="language">Python</h5>
                     </div>
                 </div>
                 <!-- Created a class for the container in which the container for all 4 smaller grid images are. -->
@@ -85,8 +84,8 @@
                     <!-- This is the container that the images are inside of. Four images have a link to the deployed site (some linked, others not yet created), and inserts the files.-->
                     <div class="imgcontainer">
                         <a href="https://ottercreektourism.github.io/map/">
-                            <img src="./assets/images/forest.jpg" alt="Forest with rays of sun."
-                                class="imageFade" width="34%" />
+                            <img src="./assets/images/forest.jpg" alt="Forest with rays of sun." class="imageFade"
+                                width="34%" />
                         </a>
                         <div class="textBox">
                             <h4 class="projectName">Otter Creek Map</h4>
@@ -94,33 +93,34 @@
                         </div>
                     </div>
                     <div class="imgcontainer">
-                        <a href="https://ottercreektourism.github.io/code_refactor/">
-                            <img src="./assets/images/birds.jpg" alt="Pink sky with birds flying."
-                                class="imageFade" width="34%" />
+                        <a href="https://ottercreektourism.github.io/work-day-scheduler/">
+                            <img src="./assets/images/birds.jpg" alt="Pink sky with birds flying." class="imageFade"
+                                width="34%" />
                         </a>
                         <div class="textBox">
-                            <h4 class="projectName">Code Refactoring</h4>
+                            <h4 class="projectName">Work Day Scheduler</h4>
+                            <h5 class="language">JavaScript</h5>
+                        </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <a href="https://sdseney508.github.io/Group-Project-1/">
+                            <img src="./assets/images/mountains.jpg" alt="Hiking Trail wih mountains." class="imageFade"
+                                width="34%" />
+                        </a>
+                        <div class="textBox">
+                            <h4 class="projectName">Trail Finder</h4>
+                            <h5 class="language">JavaScript</h5>
+                        </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <a href="https://ottercreektourism.github.io/password-generator/">
+                            <img src="./assets/images/yosemite.jpg"
+                                alt="Sunset view of Yosemite National Park at Half Dome." class="imageFade"
+                                width="34%" />
+                        </a>
+                        <div class="textBox">
+                            <h4 class="projectName">Password Generator</h4>
                             <h5 class="language">HTML/CSS</h5>
-                        </div>
-                    </div>
-                    <div class="imgcontainer">
-                        <a href="https://github.com/ottercreektourism">
-                            <img src="./assets/images/mountains.jpg" alt="Hiking Trail wih mountains."
-                                class="imageFade" width="34%" />
-                        </a>
-                        <div class="textBox">
-                            <h4 class="projectName">Other Project</h4>
-                            <h5 class="language">To Be Created</h5>
-                        </div>
-                    </div>
-                    <div class="imgcontainer">
-                        <a href="https://github.com/ottercreektourism">
-                            <img src="./assets/images/yosemite.jpg" alt="Sunset view of Yosemite National Park at Half Dome."
-                                class="imageFade" width="34%" />
-                        </a>
-                        <div class="textBox">
-                            <h4 class="projectName">Other Project</h4>
-                            <h5 class="language">To Be Created</h5>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
         <section id="horizontal-list">
             <!-- Puts the Contact Me title in the left container. -->
             <div class="leftContainer">
-                <h3 class="sectionTitles">Contact Me</h3>
+                <h3 class="sectionTitles leftSide">Contact Me</h3>
             </div>
             <!-- Puts all of the links in the right-hand container -->
             <div class="rightContainer">
